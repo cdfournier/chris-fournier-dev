@@ -1,0 +1,111 @@
+// SKIP
+.skip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  p {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    a {
+      display: block;
+      width: 100%;
+      padding: 0;
+      text-transform: uppercase;
+      background: white;
+      opacity: 0;
+      &:focus {
+        padding: 2rem;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+// BANNERS
+.banner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: inherit;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 2rem;
+  //color: white;
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    -webkit-backdrop-filter: saturate(180%);
+    backdrop-filter: saturate(180%);
+  }
+  .text {
+    margin: 0 0 2rem;
+    h1 {
+      position: relative;
+      max-width: 32rem;
+      @include sans-bold;
+    }
+    p {
+      position: relative;
+      max-width: 32rem;
+    }
+  }
+  a.scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem 0 0;
+    border: 1px solid $orange;
+    border-radius: 100%;
+    background: transparent;
+    span {
+      width: 1.5rem;
+      height: 1.5rem;
+      @include transition(all, 0.5s, ease);
+      svg {fill: $orange;}
+    }
+    &:hover, &:focus {
+      border-color: $green;
+      span {
+        @include transform (translateY(0.5rem));
+        svg {fill: $green;}
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .banner {
+    width: calc(100% - 4rem);
+    min-height: calc(100vh - 4rem);
+    margin: 2rem auto 0;
+    padding: 2rem;
+  }
+}
