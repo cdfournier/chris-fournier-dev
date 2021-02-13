@@ -1,9 +1,27 @@
 // FONTS
 @font-face {
+  font-family: "metropolis-light";
+  font-display: swap;
+  src: url("../fonts/metropolis-light.woff2") format("woff2"),
+       url("../fonts/metropolis-light.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "metropolis-regular";
   font-display: swap;
   src: url("../fonts/metropolis-regular.woff2") format("woff2"),
        url("../fonts/metropolis-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "metropolis-medium";
+  font-display: swap;
+  src: url("../fonts/metropolis-medium.woff2") format("woff2"),
+       url("../fonts/metropolis-medium.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -17,15 +35,7 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "metropolis-light";
-  font-display: swap;
-  src: url("../fonts/metropolis-light.woff2") format("woff2"),
-       url("../fonts/metropolis-light.woff") format("woff");
-  font-style: normal;
-  font-weight: normal;
-}
-
 @mixin sans-light {font-family: "metropolis-light", sans-serif;}
 @mixin sans-regular {font-family: "metropolis-regular", sans-serif;}
+@mixin sans-medium {font-family: "metropolis-medium", sans-serif;}
 @mixin sans-bold {font-family: "metropolis-bold", sans-serif;}

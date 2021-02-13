@@ -12,7 +12,7 @@ h1, h2, h3, h4, p, small {
 }
 
 h1, h2, h3, h4, h5 {
-  @include sans-bold;
+  @include sans-regular;
   line-height: 1.2;
 }
 
@@ -38,20 +38,23 @@ h4 {
 
 @media (min-width: 48rem) {
   h1 {
-    margin-top: calc((1.434657927079066 * #{$h1-font-size}) * 0.5);
-    font-size: calc(1.434657927079066 * #{$h1-font-size}); // 3.502rem;
+    margin-top: calc(0.5 * #{$h1-font-size-big});
+  	font-size: $h1-font-size-big;
   }
+  
   h2 {
-    margin-top: calc((1.249871991807476 * #{$h2-font-size}) * 0.5);
-    font-size: calc(1.249871991807476 * #{$h2-font-size}); // 2.441rem;
+    margin-top: calc(0.5 * #{$h2-font-size-big});
+  	font-size: $h2-font-size-big;
   }
+  
   h3 {
-    margin-top: calc((1.249520153550864 * #{$h2-font-size}) * 0.5);
-    font-size: calc(1.249520153550864 * #{$h3-font-size}); // 1.953rem;
+    margin-top: calc(0.5 * #{$h3-font-size-big});
+  	font-size: $h3-font-size-big;
   }
+  
   h4 {
-    margin-top: calc((1.2504 * #{$h2-font-size}) * 0.5);
-    font-size: calc(1.2504 * #{$h4-font-size}); // 1.563rem;
+    margin-top: calc(0.5 * #{$h4-font-size-big});
+  	font-size: $h4-font-size-big;
   }
 }
 
@@ -74,18 +77,34 @@ small {
 
 @media (min-width: 90rem) {
   p {
-    margin-top: calc((1.25 * #{$p-font-size}) * 0.5);
-    margin-bottom: calc((1.25 * #{$p-font-size}) * 0.5);
-    font-size: calc(1.25 * #{$p-font-size}); // 1.25rem;
+    margin-top: calc(0.5 * #{$p-font-size-big});
+    margin-bottom: calc(0.5 * #{$p-font-size-big});
+  	font-size: $p-font-size-big;
   }
   small {
-    margin-top: calc((1.25 * #{$small-font-size}) * 0.5);
-    margin-bottom: calc((1.25 * #{$small-font-size}) * 0.5);
-    font-size: calc(1.25 * #{$small-font-size}); // 1rem;
+    margin-top: calc(0.5 * #{$small-font-size-big});
+    margin-bottom: calc(0.5 * #{$small-font-size-big});
+  	font-size: $small-font-size-big;
   }
 }
 
 .visuallyhidden {display: none;}
+
+
+
+/* HEADER SPANS */
+h2 span {
+  display: block;
+  @include sans-bold;
+  font-size: $small-font-size;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+@media (min-width: 90rem) {
+  h2 span {font-size: $small-font-size-big;}
+}
 
 
 // LISTS
@@ -118,20 +137,22 @@ dl {
 
 @media (min-width: 90rem) {
   ol, ul, dl {
+    padding: 0 0 0 calc(1.5 * #{$p-font-size-big});
     li {
-      margin-top: calc((1.25 * #{$p-font-size}) * 0.5);
-      margin-bottom: calc((1.25 * #{$p-font-size}) * 0.5);
-      font-size: calc(1.25 * #{$p-font-size}); // 1.25rem;
+  	  margin-top: calc(0.5 * #{$p-font-size-big});
+  	  margin-bottom: calc(0.5 * #{$p-font-size-big});
+  	  padding-left: calc(0.5 * #{$p-font-size-big});
+  		font-size: $p-font-size-big;
     }
   }
   dl {
     dt {
-      margin-top: calc((1.25 * #{$p-font-size}) * 0.5);
-      font-size: calc(1.25 * #{$p-font-size}); // 1.25rem;
+  	  margin-top: calc(0.5 * #{$p-font-size-big});
+  		font-size: $p-font-size-big;
     }
     dd {
-      margin-bottom: calc((1.25 * #{$p-font-size}) * 0.5);
-      font-size: calc(1.25 * #{$p-font-size}); // 1.25rem;
+      margin-bottom: calc(0.5 * #{$p-font-size-big});
+      font-size: $p-font-size-big;
     }
   }
 }

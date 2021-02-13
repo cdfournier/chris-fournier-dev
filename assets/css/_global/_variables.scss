@@ -23,6 +23,15 @@ $transferx: #0d1e27;
 $transferx-bg: #f0f5f8;
 
 
+// GRAYS: Specified shades of gray below are kept in a light to dark order
+$gray-white: #f2f2f2;
+$gray-bright: #eeeeee;
+$gray-platinum: #e5e5e5;
+$gray: #7e7e7e;
+$gray-granite: #616161;
+$gray-dark-charcoal: #333333;
+
+
 // SELECTION
 ::-moz-selection {
   color: white;
@@ -35,10 +44,19 @@ $transferx-bg: #f0f5f8;
 }
 
 
-// FONT-SIZES
+// REGULAR FONT-SIZES
 $h1-font-size: 2.441rem;
 $h2-font-size: 1.953rem;
 $h3-font-size: 1.563rem;
 $h4-font-size: 1.25rem;
 $p-font-size: 1rem;
 $small-font-size: 0.8rem;
+
+
+// BIG FONT-SIZES
+$h1-font-size-big: 3.502rem;
+$h2-font-size-big: 2.441rem;
+$h3-font-size-big: 1.953rem;
+$h4-font-size-big: 1.563rem;
+$p-font-size-big: 1.25rem;
+$small-font-size-big: 1rem;
