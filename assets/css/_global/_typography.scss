@@ -126,6 +126,7 @@ dl {
 	  margin-top: calc(0.5 * #{$p-font-size});
 		@include sans-bold;
 		font-size: $p-font-size;
+		line-height: 1.5;
 	}
 	dd {
 	  margin-bottom: calc(0.5 * #{$p-font-size});
@@ -160,7 +161,7 @@ dl {
 
 // TEXT LINK STYLES
 a {
-  font-weight: 700;
+  @include sans-bold;
   line-height: inherit;
   text-decoration: none;
   color: $orange;
