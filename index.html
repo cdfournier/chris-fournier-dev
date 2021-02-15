@@ -16,26 +16,35 @@
       .visible {
         opacity: 1;
         transition: opacity 2.5s ease-in-out;
+        transition: opacity 0.25s ease-in-out;
       }
     </style>
   </head>
   <body>
-<!--
     <script>
       document.body.className = "hidden";
     </script>
--->
     <section class="skip" style="display: none;">
       <h1 class="visuallyhidden">Skip to Content</h1>
       <p><a href="#content" class="tag--skip">Skip to Content</a></p>
     </section>
     <header>
+      <nav id="header-navigation">
+        <ul aria-labelledby="header-navigation">
+          <li>Home</li>
+          <li><a href="resume/index.html" class="tag--header-resume">Resume</a></li>
+          <li><a href="#contact" class="tag--header-contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="banner home">
-        <h1>Hello</h1>
-        <p>I&rsquo;m Chris. I am a seasoned user experience designer who works in code and Git. I use my background in marketing and user experience design to solve problems and deliver intuitive user experiences.</p>
-        <!-- <a href="#content" class="tag--scroll scroll animate"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13 16.172l5.364-5.364 1.414 1.414L12 20l-7.778-7.778 1.414-1.414L11 16.172V4h2v12.172z"/></svg></span></a> -->
+        <h1 class="visuallyhidden">Introduction</h1>
+        <div class="text">
+          <h1>Hello</h1>
+          <p>I&rsquo;m Chris. I am a seasoned user experience designer who works in code and Git. I use my background in marketing and user experience design to solve problems and deliver intuitive user experiences.</p>
+          <!-- <a href="#content" class="tag--scroll scroll animate"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13 16.172l5.364-5.364 1.414 1.414L12 20l-7.778-7.778 1.414-1.414L11 16.172V4h2v12.172z"/></svg></span></a> -->
+        </div>
       </section>
       <section id="content" class="content">
         <div class="card">
@@ -99,6 +108,6 @@
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/scripts/headroom.js"></script>
-    <!-- <script src="assets/scripts/site.js"></script> -->
+    <script src="assets/scripts/site.js"></script>
   </body>
 </html>

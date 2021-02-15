@@ -73,9 +73,10 @@ small {
   margin-top: calc(0.5 * #{$small-font-size});
   margin-bottom: calc(0.5 * #{$small-font-size});
 	font-size: $small-font-size;
+	line-height: 1.5;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 80rem) {
   p {
     margin-top: calc(0.5 * #{$p-font-size-big});
     margin-bottom: calc(0.5 * #{$p-font-size-big});
@@ -102,7 +103,7 @@ h2 span {
   text-transform: uppercase;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 80rem) {
   h2 span {font-size: $small-font-size-big;}
 }
 
@@ -136,7 +137,7 @@ dl {
 	}
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 80rem) {
   ol, ul, dl {
     padding: 0 0 0 calc(1.5 * #{$p-font-size-big});
     li {
@@ -182,3 +183,5 @@ h1 + p, h2 + p, h3 + p, h4 + p,
 h1 + ol, h2 + ol, h3 + ol, h4 + ol,
 h1 + ul, h2 + ul, h3 + ul, h4 + ul,
 h1 + dl, h2 + dl, h3 + dl, h4 + dl, {margin-top: 0;}
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child {margin-top: 0;}
