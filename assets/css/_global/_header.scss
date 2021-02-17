@@ -24,5 +24,9 @@ header {
 .headroom--unpinned {@include transform (translateY(-100%));}
 
 @media (min-width: 48rem) {
+  header {padding: 2rem;}
+}
+
+@media (min-width: 64rem) {
   header {padding: 2rem 4rem;}
 }

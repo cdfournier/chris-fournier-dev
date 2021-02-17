@@ -5,4 +5,13 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
+  nav {
+    ul {margin: $small-font-size 0;}
+  }
+}
+
+@media (min-width: 64rem) {
+  footer {
+    padding: 4rem;
+  }
 }
